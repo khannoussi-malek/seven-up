@@ -29,7 +29,7 @@ const verify = (req,res,next)=>{
     let token = req.headers.authorization ;
     console.log("TOKEN");
     console.log(token) 
-    jwt.verify(token,process.env.TOKEN_KEY,(err,user)=>{
+    jwt.verify(token,"SyEcUJJM8EpjHH7bS/S3Pw==",(err,user)=>{
         if(err)
         return res.sendStatus(403)
 
