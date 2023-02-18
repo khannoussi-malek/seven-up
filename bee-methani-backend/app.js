@@ -1,12 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const userRoutes = require('./routes/userRoutes')
+
 const app = express();
 
-mongoose
-  .connect(
-    "mongodb+srv://beemethani123:beemethani123@cluster0.ivf6xsc.mongodb.net/?retryWrites=true&w=majority",
-    { useNewUrlParser: true, useUnifiedTopology: true }
-  )
+mongoose.connect("mongodb+srv://beemethani123:beemethani123@cluster0.ivf6xsc.mongodb.net/?retryWrites=true&w=majority",{ useNewUrlParser: true, useUnifiedTopology: true })
   .then((res) => {
     app.listen(80, () => {
       console.log("Listening to port 80");
@@ -14,6 +12,8 @@ mongoose
   })
   .catch((err) => console.log(err));
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
+
+app.use(express.json());
+app.use('/users/',userRoutes)
+
+
