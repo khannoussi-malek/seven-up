@@ -6,9 +6,9 @@ import { useAuthContext } from './../Providers/AuthContext';
 export const PublicOnly = ({
   children,
 }) => {
-  const { isAuthenticated } = useAuthContext();
+  const { isConnected } = useAuthContext();
 
-  return isAuthenticated ? (
+  return isConnected ? (
     <Navigate to="/" replace />
   ) : children;
 };

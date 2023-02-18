@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
-export const useRedirectUrl = (defaultTo = '/') => {
+export const useRedirectUrl = (defaultUrl = '/') => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
 
@@ -11,9 +11,9 @@ export const useRedirectUrl = (defaultTo = '/') => {
       navigate(
         searchParams.get('redirect')
           ? decodeURIComponent(searchParams.get('redirect') ?? '')
-          : defaultTo,
+          : defaultUrl,
         { replace: true }
       ),
-    [navigate, searchParams, defaultTo]
+    [navigate, searchParams, defaultUrl]
   );
 };
