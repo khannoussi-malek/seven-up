@@ -1208,7 +1208,7 @@
 
 "@formiz/core@^1.8.1":
   version "1.8.1"
-  resolved "https://registry.npmjs.org/@formiz/core/-/core-1.8.1.tgz#861d562885ccec6cf188a79de6a64459fc02d229"
+  resolved "https://registry.npmjs.org/@formiz/core/-/core-1.8.1.tgz"
   integrity sha512-1+hzKqJYqMO1cjnWPo5D85A7oRVdrbPxUzDKFgQZpZcE58z//64lbtkS9yrkrmI3Eor126bt1XM5bq+BieoGug==
   dependencies:
     lodash "4.17.21"
@@ -1217,7 +1217,7 @@
 
 "@formiz/validations@^1.0.0":
   version "1.0.0"
-  resolved "https://registry.npmjs.org/@formiz/validations/-/validations-1.0.0.tgz#d61041076b8423d6f439a6b7acb0581caca37d9d"
+  resolved "https://registry.npmjs.org/@formiz/validations/-/validations-1.0.0.tgz"
   integrity sha512-pGTf0IQmSDhK7+4oTYjwtkn5TXqts33URSFXcUBMidDJgd1bSUzTQMNftg7YCeRPY8ROSsaJNWP7bFwtwHQeSA==
 
 "@humanwhocodes/config-array@^0.11.8":
@@ -1770,6 +1770,19 @@
     "@svgr/plugin-jsx" "^5.5.0"
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
+
+"@tanstack/query-core@4.24.9":
+  version "4.24.9"
+  resolved "https://registry.npmjs.org/@tanstack/query-core/-/query-core-4.24.9.tgz"
+  integrity sha512-pZQ2NpdaHzx8gPPkAPh06d6zRkjfonUzILSYBXrdHDapP2eaBbGsx5L4/dMF+fyAglFzQZdDDzZgAykbM20QVw==
+
+"@tanstack/react-query@^4.24.9":
+  version "4.24.9"
+  resolved "https://registry.npmjs.org/@tanstack/react-query/-/react-query-4.24.9.tgz"
+  integrity sha512-6WLwUT9mrngIinRtcZjrWOUENOuLbWvQpKmU6DZCo2iPQVA+qvv3Ji90Amme4AkUyWQ8ZSSRTnAFq8V2tj2ACg==
+  dependencies:
+    "@tanstack/query-core" "4.24.9"
+    use-sync-external-store "^1.2.0"
 
 "@testing-library/dom@^8.5.0":
   version "8.20.0"
@@ -6119,7 +6132,7 @@ locate-path@^6.0.0:
 
 lodash-es@4.17.21:
   version "4.17.21"
-  resolved "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  resolved "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz"
   integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
 
 lodash.debounce@^4.0.8:
@@ -7856,7 +7869,7 @@ run-parallel@^1.1.9:
 
 rxjs@6.6.3:
   version "6.6.3"
-  resolved "https://registry.npmjs.org/rxjs/-/rxjs-6.6.3.tgz#8ca84635c4daa900c0d3967a6ee7ac60271ee552"
+  resolved "https://registry.npmjs.org/rxjs/-/rxjs-6.6.3.tgz"
   integrity sha512-trsQc+xYYXZ3urjOiJOuCOa5N3jAZ3eiSpQB5hIT8zGlL2QfnHLJ2r7GMkBGuIausdJN1OneaI6gQlsqNHHmZQ==
   dependencies:
     tslib "^1.9.0"
@@ -8760,6 +8773,11 @@ url-parse@^1.5.3:
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
+
+use-sync-external-store@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz"
+  integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
