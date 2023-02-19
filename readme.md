@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 089555ae531388c22d0b26f8777883489acd83c7
 # Documentation 
 
 ### 0.Requirements :
@@ -28,4 +32,11 @@ POST  http://localhost:80/users/login
 Add User (Register) : 
 ```
 POST  http://localhost:80/users/
+<<<<<<< HEAD
 ```
+=======
+# seven-up
+>>>>>>> 3ad41058c99636d9b56df688bd995a7b9f045c9d
+=======
+```
+>>>>>>> 089555ae531388c22d0b26f8777883489acd83c7
