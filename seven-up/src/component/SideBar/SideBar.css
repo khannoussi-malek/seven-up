@@ -1,0 +1,149 @@
+
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  .sideBar{
+    width: 200px;
+    top: 4rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    transition: 0.4s;
+}
+@media (max-width: 991px) {
+    .sideBar{
+        
+      width: 180px;
+    }
+  }
+.sideBar .links{
+
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    flex-direction: column;
+    background-color: rgb(4, 2, 17);
+    /* min-height: 90vh; */
+    border-radius: 20px;
+    width: 150px;
+
+  }
+  .sideBar a{
+    text-decoration: none;
+    color: black;
+  }
+  .sideBar .links{
+    width: 100%;
+  }
+
+
+  .sideBar .link:first-child a{
+    position: relative;
+    /* font-size: 15px; */
+  }
+
+
+
+.sideBar .links li:not(:first-child){
+    margin-top: 20px;
+}
+.sideBar .link:hover{
+background-color: gold;
+}
+
+.sideBar .link{
+    transition: 0.5s;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: black;
+    width: 100%;
+    max-height: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+.sideBar .link a{
+    color: #ffffff;
+}
+  .sideBar .link .icons{
+  margin-right: 10px;
+  color: #ffffff;
+  margin-top: -8px;
+  }
+  
+  @media (max-width:768px) {
+    .sideBar .links li:not(:first-child){
+        margin-top: 10px;
+    }
+    .sideBar{
+    width: 80px;
+    }
+    .link{
+        width: fit-content;
+    }
+    .sideBar .links{
+        margin: 5px;
+    padding: 10px;}
+
+    .link a{
+        transform: translateX(50%);
+
+ display: none;
+    }
+
+
+
+}
+
+.leftArr , .rightArr{
+    position: absolute;
+    color: gold;
+    /* transform: translateY(-10px); */
+    width:fit-content;
+    font-size: 20px;
+    margin: 0;
+}
+
+.rightArr{
+    transform: translateY(-10px);
+}
+
+.hidden{
+    display: none;
+    position:absolute !important;
+
+}
+
+.disp{
+    display: block !important;
+    position:relative !important;
+}
+
+
+.clawzed{
+
+}
+
+.open{
+    width: 50px !important;
+}

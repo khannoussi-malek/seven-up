@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const userRoutes = require("./routes/userRoutes");
 const signaleRoutes = require("./routes/signaleRoutes");
 
+const cors = require('cors')
 const app = express();
 
 mongoose
@@ -25,6 +26,7 @@ app.use("/signale", signaleRoutes);
 
 app.use(express.json());
 app.use('/users/',userRoutes)
+app.use(cors("*"))
 
 
 >>>>>>> 3ad41058c99636d9b56df688bd995a7b9f045c9d

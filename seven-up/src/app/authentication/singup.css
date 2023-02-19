@@ -1,0 +1,123 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login-page .container {
+  border: solid 2px #fcd36a;
+  display: flex;
+  max-width: 800px;
+  padding: 0;
+}
+.login-page .container img {
+  width: 100px;
+  height: 150px;
+  /* transform: translateX(50%); */
+}
+.login-page .container .formiz {
+  width: 60%;
+  background-color: rgb(4, 2, 17);
+  max-width: 100%;
+  color: rgb(241, 243, 240);
+}
+.login-page .container .formiz label {
+  min-width: 130px;
+  display: inline-block;
+  /* background-color: yellow; */
+  padding: 10px;
+  margin: 20px;
+}
+/*#ffb603 */
+
+.login-page .container .formiz button {
+  position: relative;
+  margin: auto;
+  display: flex;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+  z-index: 2;
+  overflow: hidden;
+}
+.login-page .container .formiz button::before {
+  content: "";
+  width: 100%;
+  left: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  transition: 0.4s;
+  z-index: -1;
+  background-color: gold;
+}
+.login-page .container .formiz button:hover {
+  color: #fff;
+}
+.login-page .container .formiz button:hover::before {
+  left: 0;
+}
+.demo-form-group {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.demo-form-group input {
+  padding: 10px 0;
+  color: #fff;
+  caret-color: #fcd36a;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1px #fcd36a;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.login-page .container .text-intro {
+  width: 40%;
+  /* flex-grow: 30%; */
+  background-color: rgb(241, 243, 240);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.login-page .container .text-intro h2 {
+  /* transform: translateY(-100%);
+    */
+  margin-bottom: 10px;
+}
+.login-page .container .text-intro p {
+  /* transform: translateY(-50%); */
+  text-transform: capitalize;
+  max-width: 100%;
+  width: 250px;
+  font-weight: 300;
+}
+
+@media (max-width: 767px) {
+  .login-page .container {
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+  .login-page .container .formiz {
+    flex-basis: 100%;
+    padding-top: 40px;
+  }
+  .login-page .container .text-intro {
+    flex-basis: 100%;
+  }
+  .login-page .container {
+    min-height: 100vh;
+  }
+  .login-page .container .formiz button {
+    /* margin-top: 40px; */
+  }
+}
