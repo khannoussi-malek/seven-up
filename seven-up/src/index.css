@@ -6,7 +6,10 @@
   padding: 0;
 }
 :root {
-  --main-color: red;
+  --main-jaune-claire: #fcd36a;
+  --main-jaune-fonce: #ffb603;
+  --main-marrron: #aa5e06;
+
   --main-transition: 0.3s;
   --main-padding-top: 100px;
   --main-padding-bottom: 100px;
@@ -16,7 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Skranji;
 }
 
 a {
