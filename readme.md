@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Documentation 
 
 ### 0.Requirements :
@@ -29,3 +30,6 @@ Add User (Register) :
 ```
 POST  http://localhost:80/users/
 ```
+=======
+# seven-up
+>>>>>>> 3ad41058c99636d9b56df688bd995a7b9f045c9d

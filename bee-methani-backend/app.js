@@ -17,6 +17,14 @@ mongoose
   })
   .catch((err) => console.log(err));
 
+<<<<<<< HEAD
 app.use(express.json());
 app.use("/users/", userRoutes);
 app.use("/signale", signaleRoutes);
+=======
+
+app.use(express.json());
+app.use('/users/',userRoutes)
+
+
+>>>>>>> 3ad41058c99636d9b56df688bd995a7b9f045c9d
