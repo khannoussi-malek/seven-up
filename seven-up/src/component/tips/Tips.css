@@ -1,0 +1,344 @@
+
+.tips-heading {
+    font-size: 56px;
+    text-align: center;
+    margin: 50px 0px 100px;
+}
+.tips-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 0 var(--main-padding-left);
+}
+
+.tips-left-side{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    flex: 1.4 ;
+    padding: 25px 0px;
+}
+
+
+
+.heading-right{
+    position: relative;
+    font-size: 45px;
+    color: var(--orange);
+    padding-bottom:30px;
+}
+
+
+.heading-right+div{
+    position: relative;
+    font-size: 20px;
+    padding-bottom: 30px;
+    line-height: 48px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.status{
+    font-size: 17px;
+}
+
+.status :first-child{
+    color: red;
+}
+
+.status :last-child{
+    color: blue;
+}
+
+.tips-right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+.img-left-container{
+    width: fit-content;
+    position: relative;
+    height: fit-content;
+}
+
+.cadre{
+    width: 280px;
+    height: 310px;
+    /* background-color: red; */
+    position: absolute;
+    top:-15px;
+    left: -15px;
+    z-index: -1;
+    border: 2px solid red;
+    position: relative;
+}
+
+.full{
+    width: 280px;
+    height: 310px;
+    background: red;
+    position: absolute;
+    bottom:0px;
+    top:15px;
+    right: -15px;
+    z-index: -1;
+
+}
+
+.img-left-container>img{
+    width: 280px;
+    height: 310px;
+    margin-bottom: 60px;
+    position: absolute;
+    top:0;
+    right:0;
+    
+
+}
+
+
+.arrows :first-child{
+    position: absolute;
+    bottom:-55px;
+    left: 0;
+    color: black;
+    background-color: black;
+}
+
+.arrows :last-child{
+    position: absolute;
+    bottom:-55px;
+    right: 0;
+    color: black;
+    background-color: black;
+}
+
+.arrows>img{
+    width: 32px;
+    height: 25px;
+}
+
+
+
+@media (max-width:1200px)  {
+    
+    .translateToLeft{
+        animation: toLeftLargeScreen  0.5s !important;
+    }
+}
+
+
+@keyframes toLeftLargeScreen {
+
+    0%{
+        opacity: 0;
+        right: -50px;
+    }
+
+    100%{
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+@media (max-width:992px) {
+
+    
+    .tips-container{
+        display: flex;
+        flex-direction: column-reverse;}
+
+    .tips-left-side{
+        text-align: center;
+        padding: 0;
+    }
+    
+   
+
+    .heading-right {
+
+        padding-top: 50px;
+    }
+
+    .heading-right+div{
+        margin-bottom: 0px;
+    }
+ 
+}
+        
+
+
+@media (max-width:768px) {
+    .heading-right{
+        font-size: 32px;
+    }
+    
+    .heading-right+div{
+        margin-bottom: 0px;
+        padding-bottom: 18px;
+        font-size: 18px;
+    }
+
+
+    .img-left-container>img{
+        width: 250px;
+        height: 230px;
+    }
+
+    .status :last-child {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .full,.cadre{
+        width: 250px;
+        height: 230px;
+    }
+
+    .translateToLeft{
+        animation: toLeftSmallScreen  0.5s !important;
+    }
+
+    .animateFull{
+        animation: animToLeftSmall  0.8s !important;
+    }
+
+    .animateCadre{
+        animation: animToRightSmall  0.8s !important;
+    }
+
+
+}
+
+
+    .translateToRight{
+        animation: toRight  0.5s both ;
+    }
+
+    @keyframes toRight {
+
+        0%{
+            opacity: 0;
+            left: -50px;
+        }
+
+        100%{
+            opacity: 1;
+            left:0px;
+        }
+        
+    }
+
+
+    .translateToLeft{
+        animation: toLeft  0.5s ;
+    }
+
+    @keyframes toLeft {
+
+        0%{
+            opacity: 0;
+            right: -100px;
+        }
+
+        100%{
+            opacity: 1;
+            right: 0px;
+        }
+        
+    }
+
+    @keyframes toLeftSmallScreen {
+
+        0%{
+            opacity: 0;
+            right: -40px;
+        }
+
+        100%{
+            opacity: 1;
+            right: 0px;
+        }
+    }
+
+
+
+
+    .disp{
+        animation: disp  0.5s ;
+    }
+
+    
+    @keyframes disp {
+
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+        
+    }
+
+    .animateCadre{
+        animation: animToRight  0.8s ;
+    }
+
+    @keyframes animToRight {
+
+        from{
+            left: -60px;
+        }
+
+        to{
+            left:-15px;
+        }
+        
+    }
+
+    
+    .animateFull{
+        animation: animToLeft  0.8s ;
+    }
+
+    @keyframes animToLeft {
+
+        from{
+            right: -60px;
+        }
+
+        to{
+            right:-15px;
+        }
+        
+    }
+
+    @keyframes animToLeftSmall {
+
+        from{
+            right: -40px;
+        }
+
+        to{
+            right:-15px;
+        }
+        
+    }
+
+    @keyframes animToRightSmall {
+        
+        from{
+            left: -40px;
+        }
+
+        to{
+            left:-15px;
+        }
+
+    }

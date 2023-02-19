@@ -22,8 +22,8 @@
   }
 
   .sideBar{
-    height: 100vh;
     width: 200px;
+    top: 4rem;
     display: flex;
     align-items: center;
     position: fixed;
@@ -80,6 +80,7 @@ background-color: gold;
     max-height: 60px;
     padding: 10px;
     border-radius: 10px;
+    align-items: center;
 }
 .sideBar .link a{
     color: #ffffff;
@@ -144,5 +145,5 @@ background-color: gold;
 }
 
 .open{
-    width: 200px !important;
+    width: 50px !important;
 }

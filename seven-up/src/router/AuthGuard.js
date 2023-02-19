@@ -10,7 +10,6 @@ export const AuthGuard = ({
   const { isConnected } = useAuthContext();
   const { pathname, search } = useLocation();
   const navigate = useNavigate();
-console.log(isConnected)
   useEffect(() => {
     if (!isConnected) {
       navigate(`/login?redirect=${encodeURIComponent(pathname + search)}`, {
