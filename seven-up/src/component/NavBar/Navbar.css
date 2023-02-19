@@ -1,5 +1,124 @@
+.header img {
+  height: 4rem;
+  filter: drop-shadow(0 0 8px #fff);
+}
+.header {
+  width: 100vw;
 
-.header img{
-    width: 80px;
-    height: 80px;
+  position: fixed;
+  top: 0;
+  background-color: rgb(4, 2, 17);
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+  position: relative;
+}
+
+.header .container .search {
+  height: 100%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+  color: rgb(241, 243, 240);
+
+  border: solid 1px gold;
+  background-color: transparent;
+}
+.header .container .icon-mode {
+  font-size: 20px;
+}
+@media (max-width: 467px) {
+  .header .container .search {
+    display: none;
+  }
+}
+.header .container .search input {
+  caret-color: gold;
+  color: rgb(241, 243, 240);
+
+}
+@media (max-width: 767px) {
+  .header img {
+    margin-right: 10px;
+  }
+
+  .header .container .search {
+    flex: 1 1 0%;
+    padding: 10px 10px;
+  }
+  .header .container .search .search-icon {
+    width: 20px;
+  }
+  .header .container .search input {
+    width: calc(100% - 15px);
+    background-color: transparent;
+  }
+  .header img {
+    width: 70px !important;
+  }
+  .header .container .nav-menu {
+    width: 160px !important;
+  }
+  .header .container .icon-mode {
+    font-size: 20px !important;
+    color: rgb(241, 243, 240);
+  }
+
+  .header .container .menu li a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.header .container .search input::placeholder {
+  color: rgb(241, 243, 240);
+}
+
+.header .container .search input {
+  border: none;
+  background-color: transparent !important;
+}
+.header .container .search input:focus {
+  outline: none;
+}
+.header .container .search .search-icon {
+  color: rgb(241, 243, 240);
+}
+.header .container .menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header .container .menu li a {
+  display: block;
+  padding: 30px 20px;
+  height: 100%;
+  color: rgb(241, 243, 240);
+  font-size: 15px;
+  position: relative;
+  text-decoration: none;
+  transition: 0.4s;
+  margin-left: 5px;
+  position: relative;
+}
+.header .container .menu li a::after {
+  content: "";
+  left: 0;
+  bottom: 0px;
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: gold;
+  height: 3px;
+  transition: 0.4s;
+}
+.header .container .menu li:hover a::after {
+  width: 100%;
+}
+.header .container .menu li:hover a {
+  color: gold;
 }
